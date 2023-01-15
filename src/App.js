@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react"
+import Header from "./Header/Header"
+import "./Style/style.css"
+import Navbar from "./Header/Navbar";
+import About from "./About/About";
+import Skills from "./Skills/Skills"
+import Contact from "./Contact/Contact";
+import Portfolio from "./Portfolio/Portfolio";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <Header/>
+          <div className="wrapper">
+            <Navbar/>
+            <About/>
+            <Skills/>
+            <Portfolio/>
+            <Contact/>
+          </div>
+
+        <p className="footer_End">© Xayrowa 2023</p>
     </div>
   );
 }
