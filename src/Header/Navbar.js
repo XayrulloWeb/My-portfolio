@@ -1,8 +1,9 @@
 import React from 'react';
 import me from "../Images/img.jpg"
+import {HashLink} from "react-router-hash-link";
 function Navbar(props) {
     return (
-        <div className="navbar">
+        <div className="navbar" >
             <div className="container">
                 <div className="navbar_start">
                     <div className="navbar_left">
@@ -11,8 +12,8 @@ function Navbar(props) {
                             <p>Frontend Developer</p>
                         </div>
                         <div className="navbar_left-btns">
-                            <button className="button_one">Portfolio</button>
-                            <button className="button_two">Contact</button>
+                           <HashLink to="#portfolio"><button className="button_one">Portfolio</button></HashLink>
+                           <HashLink to="contact"><button className="button_two">Contact</button></HashLink>
                         </div>
                     </div>
                     <div className="navbar_right">

@@ -3,7 +3,7 @@ import {Link} from "react-router-dom";
 
 function Portfolio(props) {
     return (
-        <div className="portfolio">
+        <div className="portfolio" id="portfolio">
             <div className="container">
                 <div className="portfolio_start">
                     <div className="portfolio_text">

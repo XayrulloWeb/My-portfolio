@@ -1,5 +1,5 @@
 import React,{useState} from 'react';
-import {Link} from "react-router-dom";
+import {HashLink, Link} from "react-router-hash-link";
 
 function Header(props) {
     const [navbarOpen, setNavbarOpen] = useState(false)
@@ -12,22 +12,28 @@ function Header(props) {
     }
 
     return (
-        <div className="header">
+        <div className="header" id="home">
             <div className="container">
                 <div className="header_start">
                     <div className="header_left">
-                        <h2>Xayrowa</h2>
+                        <HashLink to="home">                        <h2>Xayrowa</h2>
+                        </HashLink>
                     </div>
 
                     <div className={`menuNav ${navbarOpen ? " showMenu" : ""}`}>
                         <ul>
-                            <Link>About me</Link>
-                            <Link>Services</Link>
-                            <Link>Contact me</Link>
+                            <HashLink to="#about" >About me</HashLink>
+                            <HashLink to="#portfolio">Portfolio</HashLink>
+                            <HashLink to="#contact">Contact </HashLink>
                         </ul>
 
                     </div>
-                    <button className="burger" onClick={handleToggle}>{navbarOpen ? "Close" : "Open"}</button>
+                    <div className="burger" onClick={handleToggle}>{navbarOpen ? false : true}
+                        <input className="checkbox" type="checkbox"/>
+                        <span className="line line1"></span>
+                        <span className="line line2"></span>
+                        <span className="line line3"></span>
+                    </div>
 
                 </div>
 
