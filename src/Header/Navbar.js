@@ -18,7 +18,8 @@ function Navbar(props) {
                     </div>
                     <div className="navbar_right">
                         <div className="navbar_right-radius">
-                            <img src={me} alt="me"/>
+                            <div className="navbar_right-image">
+                            </div>
                         </div>
                     </div>
                 </div>

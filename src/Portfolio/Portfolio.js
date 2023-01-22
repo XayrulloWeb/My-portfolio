@@ -1,5 +1,4 @@
 import React from 'react';
-import {Link} from "react-router-dom";
 
 function Portfolio(props) {
     return (
@@ -11,16 +10,16 @@ function Portfolio(props) {
                     </div>
                     <div className="portfolio_img">
                         <div className="portfolio_project-one">
-                           <Link><p>Строительная компания</p></Link>
+                           <a target="_blank" href="http://building-uz.netlify.app/"><p>Строительная компания</p></a>
                         </div>
 
                         <div className="portfolio_project-two">
-                            <Link><p>Студия дизайна</p></Link>
+                            <a target="_blank" href="https://injener-uz.netlify.app/"><p>Студия дизайна</p></a>
 
                         </div>
 
                         <div className="portfolio_project-three">
-                            <Link><p>Компания</p></Link>
+                            <a target="_blank" href="https://online-cource-xayrulloweb.netlify.app/"><p>Компания</p></a>
 
                         </div>
                     </div>

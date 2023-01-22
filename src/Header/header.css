@@ -115,7 +115,8 @@ a{
     background: rgba(30, 29, 29, 0.2);
     border: 1px solid #202020;
 }
-.navbar_right-radius img{
+
+.navbar_right-image{
     height: 600px;
     width: 600px;
     display: flex;
@@ -125,8 +126,9 @@ a{
     position: relative;
     left: 25px;
     top: 25px;
-
+    background: url("../Images/img.jpg") no-repeat center center / cover;
 }
+
 .navbar_left-btns a:not(:last-child){
     margin-right: 10px;
 }
@@ -146,7 +148,7 @@ a{
         width: 450px;
         height: 450px;
     }
-    .navbar_right-radius img{
+    .navbar_right-image{
         width: 400px;
         height: 400px;
     }
@@ -180,7 +182,7 @@ a{
         width: 320px;
         height: 320px;
     }
-    .navbar_right-radius img{
+    .navbar_right-image{
         width: 270px;
         height: 270px;
     }
@@ -193,7 +195,7 @@ a{
 
     .menuNav.showMenu {
         width: 100%;
-        transition: all 2s ease;
+        transition: all 1s ease;
         border: 1px solid #007ced;
     }
     .menuNav {
@@ -208,7 +210,7 @@ a{
         overflow: hidden;
         max-width: 100%;
         z-index: 9;
-        transition: all 1s ease;
+        transition: all .5s ease;
         box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.08);
     }
     /*.burger{*/
