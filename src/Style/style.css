@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+@import url("../About/about.css");
+@import url("../Header/header.css");
+@import url("../Skills/skills.css");
+@import url("../Contact/contact.css");
+@import url("../Portfolio/portfolio.css");
+@import url("../Style/paralax.css");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.container{
+    max-width: 1440px;
+    width: 100%;
+    padding: 0 80px;
+    margin: 0 auto;
+}
+
+
+
+.footer_End{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: #4F4F4F;
+    text-align: center;
+    margin-bottom: 70px;
+}
+@media(max-width: 600px){
+    .container{
+        padding: 0 40px;
+    }
+}
+
+
+
+body {
+    background: radial-gradient(ellipse at bottom, #1b2735 0%,#090a0f 100%);
+}
+

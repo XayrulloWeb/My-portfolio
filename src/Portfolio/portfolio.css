@@ -1,0 +1,95 @@
+.portfolio_project-one{
+    background: url("../Images/project1.jpg") no-repeat center center / cover;
+    width: 450px;
+    height: 250px;
+    border-radius: 15px;
+    transition: all .8s ease-in ;
+    cursor: pointer;
+    margin-bottom: 50px;
+
+
+}
+.portfolio{
+    margin-bottom: 100px;
+}
+
+.portfolio_text {
+    text-align: center;
+    margin-bottom: 100px;
+    color: #fff;
+    font-size: 48px;
+}
+
+.portfolio_project-two{
+    background: url("../Images/project2.jpg") no-repeat center center / cover;
+    width: 450px;
+    height: 250px;
+    justify-content: flex-end;
+    display: flex;
+    transition: all .8s ease-in ;
+    cursor: pointer;
+    border-radius: 15px;
+    margin-bottom: 50px;
+
+}
+.portfolio_project-two a{
+    width: 100%;
+}
+.portfolio_project-one p, .portfolio_project-three p{
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: #fff;
+    transition: all .8s ease-in ;
+}
+.portfolio_project-one p:hover, .portfolio_project-two p:hover, .portfolio_project-three p:hover{
+    opacity: 1;
+    transition: all .8s ease-in ;
+
+}
+.portfolio_project-one:hover, .portfolio_project-two:hover, .portfolio_project-three:hover{
+    transition: all .8s ease-in ;
+}
+
+.portfolio_project-three{
+    background: url("../Images/project3.jpg") no-repeat center center / cover;
+    width: 450px;
+    height: 250px;
+    border-radius: 15px;
+    transition: all .8s ease-in ;
+    cursor: pointer;
+
+}
+
+.portfolio_project-two p{
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 11;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #007ced;
+    transition: all .8s ease-in ;
+}
+.portfolio_project-two:hover{
+    transform: scale(1.1);
+}
+
+.portfolio_img{
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+}
+
+@media(max-width: 425px) {
+    .portfolio_project-one, .portfolio_project-two, .portfolio_project-three{
+        width: 100%;
+    }
+}
