@@ -1,7 +1,19 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import me from "../Images/img.jpg"
 import {HashLink} from "react-router-hash-link";
+import gsap from "gsap";
 function Navbar(props) {
+
+
+    useEffect(() => {
+        const animation = gsap.from(".navbar_right", {
+            duration: 1.5, ease: "expo.out", x: -100,
+        })
+        animation.play();
+    },[]);
+    gsap.from(".navbar_left-text", { duration: 1.5, ease: "expo.out", x: 300, opacity: 0 });
+
+
     return (
         <div className="navbar" >
             <div className="container">

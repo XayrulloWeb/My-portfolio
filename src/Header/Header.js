@@ -1,5 +1,6 @@
-import React,{useState} from 'react';
+import React,{useState, useEffect} from 'react';
 import {HashLink, Link} from "react-router-hash-link";
+import gsap from 'gsap';
 import logo from "../Images/logo.png"
 
 function Header(props) {
@@ -11,6 +12,7 @@ function Header(props) {
     const closeMenu = () => {
         setNavbarOpen(false)
     }
+
 
     return (
         <div className="header" id="home">
@@ -28,7 +30,7 @@ function Header(props) {
                         </ul>
 
                     </div>
-                    <div className="burger" onClick={handleToggle}>{navbarOpen ? false : true}
+                    <div className="burger" onClick={handleToggle}>
                         <input className="checkbox" type="checkbox"/>
                         <span className="line line1"></span>
                         <span className="line line2"></span>
